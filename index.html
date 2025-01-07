@@ -183,7 +183,7 @@
                 </div>
                 <div class="form-campo">
                     <label for="veiculo-interesse">Veículo de interesse:</label>
-                    <input type="text" id="veiculo-interesse" name="veiculo-interesse">
+                    <input type="text" id="veiculo-interesse" name="veiculoInteresse">
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem:</label>
@@ -248,12 +248,19 @@
                     },
                     telefone: {
                         required: true
+                    },
+                    veiculoInteresse: {
+                        required: false
+                    },
+                    mensagem: {
+                        required: true
                     }
                 },
                 messages: {
                     nome: 'Por favor, insira o seu nome.',
                     email: 'E-mail é obrigatório.',
-                    telefone: 'Por favor, telefone é obrigatório!'
+                    telefone: 'Por favor, telefone é obrigatório!',
+                    mensagem: 'Campor obrigatório!'
                 },
                 SubmitHandler: function(form) {
                     console.log(form)

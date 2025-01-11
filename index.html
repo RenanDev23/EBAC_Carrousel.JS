@@ -70,7 +70,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
                 <li class="item-central">
                     <img src="./images/carro-bmw.png" alt="Carro bmw">
@@ -79,7 +79,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
                 <li>
                     <img src="./images/carro-bmw.png" alt="Carro bmw">
@@ -88,7 +88,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
                 <li>
                     <img src="./images/carro-bmw.png" alt="Carro bmw">
@@ -97,7 +97,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
                 <li class="item-central">
                     <img src="./images/carro-bmw.png" alt="Carro bmw">
@@ -106,7 +106,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
             </ul>
         </div>
@@ -123,7 +123,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
                 <li class="item-central">
                     <img src="./images/carro-bmw.png" alt="Carro bmw">
@@ -132,7 +132,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
                 <li>
                     <img src="./images/carro-bmw.png" alt="Carro bmw">
@@ -141,7 +141,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
                 <li>
                     <img src="./images/carro-bmw.png" alt="Carro bmw">
@@ -150,7 +150,7 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
                 <li class="item-central">
                     <img src="./images/carro-bmw.png" alt="Carro bmw">
@@ -159,13 +159,13 @@
                     <del>R$89.000,00</del>
                     <strong>R$59.000,00</strong>
                    </div>
-                   <button type="buttom">Tenho interesse</button>            
+                   <button type="button">Tenho interesse</button>            
                 </li>
             </ul>
         </div>
     </section>
 
-    <section>
+    <section id="contato">
         <div class="container">
             <h2>Entre em contato</h2>
             <form>
@@ -225,55 +225,7 @@
     <script src="./JS/jquery.mask.min.js"></script>
     <script src="./JS/jquery.validate.min.js"></script>
     <script src="./JS/messages_pt_BR.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#carousel-imagens').slick({
-                autoplay:true
-            });
-
-            $('.menu-hamburguer').click(function() {
-                $('nav').slideToggle();  
-            })
-
-            $('#telefone').mask('(00)00000-0000')
-
-            $('form').validate({
-                rules: {
-                    nome: {
-                        required: true
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    telefone: {
-                        required: true
-                    },
-                    veiculoInteresse: {
-                        required: false
-                    },
-                    mensagem: {
-                        required: true
-                    }
-                },
-                messages: {
-                    nome: 'Por favor, insira o seu nome.',
-                    email: 'E-mail é obrigatório.',
-                    telefone: 'Por favor, telefone é obrigatório!',
-                    mensagem: 'Campor obrigatório!'
-                },
-                SubmitHandler: function(form) {
-                    console.log(form)
-                },
-                invalidHandler: function(evento, validador) {
-                    let camposIncorretos = validador.numberOfInvalids();
-                    if (camposIncorretos) {
-                        alert(`existem ${camposIncorretos} campos incorretos`)
-                    }
-                }
-            })
-        })
-    </script>
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>
